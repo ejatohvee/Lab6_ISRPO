@@ -40,12 +40,12 @@ jobs:
         
     - uses: Nuitka/Nuitka-Action@v0.4
       with:
-          script-name: main.py
+          script-name: Calculator.py
 
       # Uploads artifact
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
           name: exe
-          path: build/main.exe
+          path: build/Calculator.exe
     
