@@ -38,10 +38,6 @@ jobs:
       run: |
         python tests.py
         
-    - uses: Nuitka/Nuitka-Action@v0.4
-      with:
-          script-name: Calculator.py
-
       # Uploads artifact
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
