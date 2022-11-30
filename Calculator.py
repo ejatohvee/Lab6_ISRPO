@@ -60,15 +60,18 @@ def ask_operation():
     return operation
 
 
+
 def run_calculator():
-    a = int(input('Введите первое число: '))
-    b = int(input('Введите второе число: '))
+    if __name__ == "__main__":
+        a = int(input('Введите первое число: '))
+        b = int(input('Введите второе число: '))
 
-    operation = ask_operation()
+    if __name__ == "__main__":
+        operation = ask_operation()
 
-    result = calculate(a, b, operation)
+        result = calculate(a, b, operation)
 
-    print(f'Результат вычислений: {result}')
+        print(f'Результат вычислений: {result}')
 
 
 run_calculator()
